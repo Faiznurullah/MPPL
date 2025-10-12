@@ -1,0 +1,23 @@
+[package]
+name = "explore"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+wasm-bindgen = "0.2"
+js-sys = "0.3"
+
+[dependencies.rand]
+version = "0.8"
+features = ["small_rng"]
+
+[dependencies.getrandom]
+version = "0.2"
+features = ["js"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.web-sys]
+version = "0.3"
+features = ["Window", "Document", "Element", "HtmlElement", "console"]
